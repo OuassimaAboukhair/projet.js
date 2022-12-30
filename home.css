@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family:'Courier New', Courier, monospace;
+}
+header{
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+}
+.navbar{
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    background-color:beige;
+    height:0px  ;
+}
+.navbar a {
+    color:black;
+    font-size: x-large;
+}
+a.active,a:hover{
+    background: palevioletred;
+    transition: 1s;
+
+}
+
+.navbar .nav-links ul{
+    display: flex;
+    
+
+}
+.navbar .nav-links ul li{
+    
+    margin-right: 50px;
+    align-items: center;
+
+}
+.eat{
+  
+   background-color:hwb(0 10% 90% / 0.527);
+   position: absolute;
+   width: 70%;
+   height: 60%;
+   margin: 140px;
+   border-radius: 30px;
+   top: -15px;
+  
+}
+.eat .p1{
+    color: antiquewhite;
+    font-size: 50px;
+    text-align: center;
+    margin: 70px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    font-weight: 900;
+    font-style: normal;
+}
+.eat .p2{
+    color: antiquewhite;
+    font-size: xx-large;
+    text-align: center;
+    margin: 70px;
+    font-style:normal;
+    font-weight: 900;
+    font-size: 40px;
+   
+}
+.eat .p{
+        position:absolute;
+        border: none;
+        color: #ffffff;
+        width: 10em;
+        height: 3em;
+        line-height: 2em;
+        text-align: center;
+        background: palevioletred;
+        border-radius: 30px;
+        text-transform: uppercase;
+        cursor: pointer;
+        z-index: 1;
+        margin-left: 70%;
+       
+        
+    }
+    .eat .p:hover{
+        animation: animation 8s linear infinite;
+        border: none;
+    }
+    @keyframes animation{
+        0%{background-position: 0%;}
+        100%{background-position: 400%;}
+    }
+    .eat .p::before{
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        z-index: -1;
+        background: palevioletred;
+        background-size: 400%;
+        border-radius: 35px;
+        transition: 1s;
+        
+    }
+    .eat .p:hover::before{
+        filter: blur(20px);
+    }
+    
+
+
+
+img{
+   width: 100%;
+   height: 630px;
+    }
+.img-gallery{
+    max-width: 800px;
+    width: 80%;
+    height: auto; 
+    margin: 55px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+        
+        } 
+          
+.img-gallery img{
+        width: 100%;
+        border-radius: 10px;
+        height: 5cm;
+        width: 10cm;
+        margin: 2cm;
+        margin-top: -80px;
+        
+         }
+      
+.col{
+        position: relative;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 2em;
+        margin:30px;
+        padding: 4px;
+        padding-top: 4px;
+        flex-direction: column; 
+        
+    
+    
+    }
+ .titre{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        
+    }
+.titre .btn1 {
+            position:absolute;
+            border: none;
+            color: #ffffff;
+            width: 15em;
+            height: 3em;
+            line-height: 2em;
+            text-align: center;
+            background: palevioletred;
+            border-radius: 30px;
+            text-transform: uppercase;
+            cursor: pointer;
+            z-index: 1;
+            margin-left: 5%;
+           top: 135%;
+            
+        }
+        .titre .btn1:hover{
+            animation: animation 8s linear infinite;
+            border: none;
+        }
+        @keyframes animation{
+            0%{background-position: 0%;}
+            100%{background-position: 400%;}
+        }
+        .titre .btn1::before{
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            z-index: -1;
+            background: palevioletred;
+            background-size: 400%;
+            border-radius: 35px;
+            transition: 1s;
+            
+        }
+        .titre .btn1:hover::before{
+            filter: blur(20px);
+        }
+        
+ .img-gallery p { 
+        font-size: large;
+        width: 100%;
+        position: relative;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        margin-top: -65px;
+        margin-left: 10%;
+    
+    }
+    
+ span{
+        font-size: large;
+        width: 100%;
+        position: relative;
+        font-family: 'Courier New', Courier, monospace;
+        color: blue;
+        text-align: center;
+        margin-top: -1cm;
+    }
+
+.coursename {
+    font-size: small;
+   text-align: center;
+    color: black;
+    margin-top: 0.5cm;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 50%;
+  }
+ .price {
+    font-size: small;
+    text-align: center;
+    color: black;
+    font-weight: 1000;
+    margin-top: -1cm;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     margin-left: 50%;
+  }

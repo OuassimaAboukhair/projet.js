@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family:'Courier New', Courier, monospace;
+}
+.navbar{
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    background-color:rgba(245, 245, 220, 0.13);
+    height:0px  ;
+    top: -1%;
+}
+.navbar a {
+    color:black;
+    font-size: x-large;
+}
+a.active,a:hover{
+    background: palevioletred;
+    transition: 1s;
+
+}
+
+.navbar .nav-links ul{
+    display: flex;
+    
+
+}
+.navbar .nav-links ul li{
+    
+    margin-right: 50px;
+    align-items: center;
+
+}
+.about{
+    margin-left: 8%;
+    margin-top: 15%;
+}
+.about h1{
+    font-size: 40px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+span{
+    color: chocolate;
+}
+.about p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    font-size: x-large;
+}
+.imagME{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.imagME img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s,left 1s;
+}
+.imagME .shape{
+    width: 20cm;
+    height: 20cm;
+    border-radius: 40px;
+}
+.imagME .me{
+    width: 15cm;
+    height: 10cm;
+    margin-left: -40%;
+    top: 35%;
+    border-radius: 40px;
+}
+.imagME:hover .shape{
+     bottom: 40px;
+}
+.imagME:hover .me{
+    left: 45%;
+}
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- Head -->
+    <link rel="stylesheet" href="courese1.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <ul>
+                <li ><a href="home.html">Home</a></li>
+                <li><a href="courese1.html">Courses</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="menu" >
+      <!-- title -->
+      <div id="hell">
+<div class="title">
+        <h2>Menu</h2>
+        <div class="underline"></div>
+        <input type="text" placeholder="search..." id="input" class="input">
+      </div>
+
+
+      <div class="btn-container"  >
+        <div class="btn" id="bouton">
+            <button class="b"  id="All" >ALL</button><br>
+            <button class="b" id="JS" >JS</button><br>
+            <button class="b" id="HTML" >HTML</button><br>
+            <button class="b" id="CSS">CSS</button><br>
+            <button class="b" id="PHP">PHP</button><br>
+           </div>
+      </div>
+<br> 
+
+<div class="box">
+<input type="range" class="range" id="range" value="0" min="0" max="100" onmousemove="rangeSlider(this.value)" step="0.25">
+      <p  id="rvalue">0</p>
+      <div  id="priceindispo"></div>
+      </div>
+    </div>
+      
+      <!-- menu items -->
+      <div class="section-center"  >
+        <article class="menu-item" >
+          <img src="" alt="menu item" class="photo" id="photo" />
+          <div class="item-info">
+            <header>
+              <h4></h4>
+              <h4 class="price"></h4>
+            </header>
+            <p class="item-text">
+            </p>
+          </div>
+        </article>
+          </div>
+    </section>
+    
+    <script src="courese1.js"></script>
+  </body>
+</html>
